@@ -55,6 +55,7 @@ input {
 	align-items: center;
 	text-align: center;
 	padding-bottom: 2px;
+	opacity: 0.5;
 }
 
 input::-ms-clear {
@@ -494,18 +495,13 @@ h6 {
 	border-top: none;
 }
 
-.hed {
-}
-.row {
-}
-.dod {
-}
 .centr-rr {
 	display: flex;
 	flex: 0 0 63%;
 }
 .centr-rr> p{
 	display: flex;
+	padding-left: 3px;
 	align-items: center;
 }
 .wid {
@@ -521,6 +517,7 @@ h6 {
 .centr-col .hed-text__2{
 display: flex;
 justify-content: start;
+padding-left: 2px;
 }
 .centr-col .hed-text__1{
 	border-bottom: 1px solid #000;
@@ -555,4 +552,11 @@ justify-content: start;
 .on .col{
 	border-bottom:none;
 }
+.on .col .hed-text__1,
+.on .col .hed-text__2{
+	height: 210%;
+}
 
+.br .hed-text__2{
+	border-right:none;
+}
