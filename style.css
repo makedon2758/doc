@@ -39,6 +39,9 @@ body {
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
+.wraper{
+padding-bottom: 300px;
+}
 input,
 button,
 textarea {
@@ -501,8 +504,12 @@ h6 {
 	display: flex;
 	flex: 0 0 63%;
 }
-.centr > p {
-	
+.centr-rr> p{
+	display: flex;
+	align-items: center;
+}
+.wid {
+	width: 100%;
 }
 .centr-col {
 	text-align: left;
@@ -517,6 +524,9 @@ justify-content: start;
 }
 .centr-col .hed-text__1{
 	border-bottom: 1px solid #000;
+}
+.on .centr-col .hed-text__1{
+	border-bottom: none;
 }
 .hed-text__1 input,
 .hed-text__2 input,
@@ -542,3 +552,7 @@ justify-content: start;
 .col:nth-child(1){
 	border-bottom: 1px solid #000;
 }
+.on .col{
+	border-bottom:none;
+}
+
