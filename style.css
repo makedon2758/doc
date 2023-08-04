@@ -47,7 +47,7 @@ textarea {
 input {
 	color: blue;
 	font-weight: 600;
-		display: flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -162,13 +162,13 @@ h6 {
 }
 .p02-input1 {
 	border: 1px solid #000;
-position: relative;
+	position: relative;
 }
 .p02-input1::after {
-	content: '(рік)';
+	content: "(рік)";
 	position: absolute;
 	left: 50%;
-	transform: translate(-50% , 0);
+	transform: translate(-50%, 0);
 }
 .p02-input3 input,
 .p02-input1 input,
@@ -188,13 +188,13 @@ position: relative;
 .p02-input2 {
 	border: 1px solid #000;
 	margin-left: 20px;
-position: relative;
+	position: relative;
 }
 .p02-input2::after {
-	content: '(місяць)';
+	content: "(місяць)";
 	position: absolute;
 	left: 50%;
-	transform: translate(-50% , 0);
+	transform: translate(-50%, 0);
 }
 .p02-input3 {
 	border: 1px solid #000;
@@ -202,19 +202,19 @@ position: relative;
 	position: relative;
 }
 .p02-input3::after {
-	content: '(місяць)';
+	content: "(місяць)";
 	position: absolute;
 	left: 50%;
-	transform: translate(-50% , 0);
+	transform: translate(-50%, 0);
 }
-.kv{
+.kv {
 	position: relative;
 }
 .p02-input2::after {
-	content: '(квартал)';
+	content: "(квартал)";
 	position: absolute;
 	left: 50%;
-	transform: translate(-50% , 0);
+	transform: translate(-50%, 0);
 }
 
 .p02-input3 input {
@@ -266,17 +266,16 @@ position: relative;
 	position: relative;
 }
 .p04-inputs::after {
-	content: '(повне найменування (прізвище, ім’я, по батькові (за наявності)) платника податків згідно з реєстраційними документами, дата та номер договору (угоди))';
+	content: "(повне найменування (прізвище, ім’я, по батькові (за наявності)) платника податків згідно з реєстраційними документами, дата та номер договору (угоди))";
 	position: absolute;
 	left: 55%;
 	bottom: -15px;
 	width: 100%;
-	transform: translate(-50% , 0);
+	transform: translate(-50%, 0);
 }
 .p04-input1 {
 	height: 70px;
 	width: 100%;
-	
 }
 .p04-input1 input {
 	width: 100%;
@@ -293,12 +292,10 @@ position: relative;
 .p04-input3 {
 	align-self: end;
 	display: flex;
-
 }
 .p04-column {
 	display: flex;
 }
-
 
 .p041 {
 	display: flex;
@@ -313,10 +310,9 @@ position: relative;
 }
 .p041-input {
 	border: 1px solid #000;
-padding: 0.5px;
-margin-left: 20px;
+	padding: 0.5px;
+	margin-left: 20px;
 }
-
 
 .p06 {
 	height: 90px;
@@ -333,12 +329,11 @@ margin-left: 20px;
 	display: flex;
 	flex-direction: column;
 }
-.p06-adres input{
+.p06-adres input {
 	margin-top: 20px;
 	width: 100%;
 }
 .p06-body {
-	
 	display: flex;
 	flex-direction: column;
 	width: 350px;
@@ -371,10 +366,119 @@ margin-left: 20px;
 
 .p06-body__index p,
 .p06-body__tel p,
-.p06-body__mail p{
+.p06-body__mail p {
 	flex: 0 1 50%;
-	border-right:1px solid #000;
-height: 30px;
-padding-top: 3px;
-padding-left: 3px;
+	border-right: 1px solid #000;
+	height: 30px;
+	padding-top: 3px;
+	padding-left: 3px;
+}
+
+.p-tex {
+	margin-top: 30px;
+	display: flex;
+	gap: 30px;
+	position: relative;
+}
+.p-tex::after{
+	position: absolute;
+	content:'(грн)';
+	right: 0;
+	bottom: -60px;
+}
+.mb {
+}
+.p-tex__p {
+	width: 200px;
+}
+.p-tex__input {
+	flex: 1 1 auto;
+	position: relative;
+}
+.p-tex__input::after {
+	content: "(найменування контролюючого органу, до якого подається звітність)";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 100%);
+}
+.p-tex__input input {
+	width: 100%;
+}
+
+.hed,
+.hed2 {
+	margin-top: 60px;
+	border: 1px solid #000;
+	display: flex;
+	height: 60px;
+}
+.hed2{
+	height: 20px;
+margin-top: 0;
+border-top:none;
+}
+
+.hed-row {
+}
+.row {
+	width: 60px;
+	border-right: 1px solid #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 5px;
+}
+.hed-dod {
+}
+.dod {
+		width: 60px;
+	border-right: 1px solid #000;
+		display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 5px;
+}
+.hed-cente {
+}
+.centr {
+	flex: 1 1 auto;
+			display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-right: 1px solid #000;
+}
+.hed-text {
+	display: flex;
+	align-items: center;
+
+}
+.hed-text__1 {
+	border-right: 1px solid #000;
+height: 100%;
+width: 130px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.hed-text__2 {
+	border-right: 1px solid #000;
+	height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+width: 130px;
+}
+.hed-text__3 {
+	height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+width: 100px;
 }
