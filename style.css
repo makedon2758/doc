@@ -316,3 +316,65 @@ position: relative;
 padding: 0.5px;
 margin-left: 20px;
 }
+
+
+.p06 {
+	height: 90px;
+	display: flex;
+}
+.mb {
+}
+.number {
+}
+.p06-adres {
+	flex: 1 1 auto;
+	border: 1px solid #000;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+}
+.p06-adres input{
+	margin-top: 20px;
+	width: 100%;
+}
+.p06-body {
+	
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	margin-left: 20px;
+}
+.p06-body__index {
+	display: flex;
+	border: 1px solid #000;
+	align-items: center;
+	justify-content: space-between;
+	height: 30px;
+}
+.p06-body__tel {
+	border: 1px solid #000;
+	border-top: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 30px;
+}
+
+.p06-body__mail {
+	align-items: center;
+	border: 1px solid #000;
+	border-top: none;
+	display: flex;
+	justify-content: space-between;
+	height: 30px;
+}
+
+.p06-body__index p,
+.p06-body__tel p,
+.p06-body__mail p{
+	flex: 0 1 50%;
+	border-right:1px solid #000;
+height: 30px;
+padding-top: 3px;
+padding-left: 3px;
+}
