@@ -44,13 +44,10 @@ button,
 textarea {
 	font-family: inherit;
 }
-input{
+input {
 	color: blue;
 	font-weight: 600;
-	background-color: rgba(128, 128, 128, 0.13);
 }
-
-
 
 input::-ms-clear {
 	display: none;
@@ -89,7 +86,7 @@ h6 {
 /* STYLE */
 
 .mb {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 .wraper {
 }
@@ -128,7 +125,7 @@ h6 {
 	font-size: 18px;
 	border-right: none;
 }
-.titl .number{
+.titl .number {
 	width: 85px;
 }
 
@@ -148,7 +145,7 @@ h6 {
 	display: flex;
 }
 
-.p02 .number{
+.p02 .number {
 	width: 80px;
 }
 .p02-period {
@@ -160,6 +157,13 @@ h6 {
 }
 .p02-input1 {
 	border: 1px solid #000;
+position: relative;
+}
+.p02-input1::after {
+	content: '(рік)';
+	position: absolute;
+	left: 50%;
+	transform: translate(-50% , 0);
 }
 .p02-input3 input,
 .p02-input1 input,
@@ -169,7 +173,6 @@ h6 {
 	align-items: center;
 	text-align: center;
 	padding: 2px;
-
 }
 .p02-input1 input {
 	width: 150px;
@@ -180,13 +183,36 @@ h6 {
 .p02-input2 {
 	border: 1px solid #000;
 	margin-left: 20px;
+position: relative;
+}
+.p02-input2::after {
+	content: '(місяць)';
+	position: absolute;
+	left: 50%;
+	transform: translate(-50% , 0);
 }
 .p02-input3 {
 	border: 1px solid #000;
 	margin-left: 20px;
+	position: relative;
+}
+.p02-input3::after {
+	content: '(місяць)';
+	position: absolute;
+	left: 50%;
+	transform: translate(-50% , 0);
+}
+.kv{
+	position: relative;
+}
+.p02-input2::after {
+	content: '(квартал)';
+	position: absolute;
+	left: 50%;
+	transform: translate(-50% , 0);
 }
 
-.p02-input3 input{
+.p02-input3 input {
 	width: 144px;
 }
 
@@ -198,14 +224,72 @@ h6 {
 .p031-input {
 	border: 1px solid #000;
 	width: 100%;
-	
+	display: flex;
+	align-items: center;
+	padding: 0.5px;
 }
 
-.p031-input input{
-	width: 100%;
+.p031-input input {
+	width: 10%;
 	padding: 1px;
 }
 
-.p031 .number{
+.p031 .number {
 	width: 85px;
+}
+
+.p04 {
+	display: flex;
+	height: 80px;
+}
+
+.p04-right {
+	width: 80px;
+	border: 1px solid #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-right: none;
+}
+.p04-inputs {
+	flex: 1 1 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #000;
+	flex-direction: column;
+	position: relative;
+}
+.p04-inputs::after {
+	content: '(повне найменування (прізвище, ім’я, по батькові (за наявності)) платника податків згідно з реєстраційними документами, дата та номер договору (угоди))';
+	position: absolute;
+	left: 55%;
+	bottom: -15px;
+	width: 100%;
+	transform: translate(-50% , 0);
+}
+.p04-input1 {
+	height: 70px;
+	width: 100%;
+	
+}
+.p04-input1 input {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 20px;
+}
+.p04-input2 {
+	align-self: end;
+	padding-bottom: 5px;
+}
+.p04-input3 {
+	align-self: end;
+	padding-bottom: 5px;
+
+}
+.p04-column {
+	display: flex;
 }
