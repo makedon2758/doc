@@ -47,6 +47,11 @@ textarea {
 input {
 	color: blue;
 	font-weight: 600;
+		display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-bottom: 2px;
 }
 
 input::-ms-clear {
@@ -283,13 +288,31 @@ position: relative;
 }
 .p04-input2 {
 	align-self: end;
-	padding-bottom: 5px;
+	display: flex;
 }
 .p04-input3 {
 	align-self: end;
-	padding-bottom: 5px;
+	display: flex;
 
 }
 .p04-column {
 	display: flex;
+}
+
+
+.p041 {
+	display: flex;
+	align-items: center;
+}
+.number {
+}
+.p041-text {
+	flex: 1 1 auto;
+	border: 1px solid #000;
+	padding: 2px;
+}
+.p041-input {
+	border: 1px solid #000;
+padding: 0.5px;
+margin-left: 20px;
 }
