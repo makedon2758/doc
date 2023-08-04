@@ -380,9 +380,9 @@ h6 {
 	gap: 30px;
 	position: relative;
 }
-.p-tex::after{
+.p-tex::after {
 	position: absolute;
-	content:'(грн)';
+	content: "(грн)";
 	right: 0;
 	bottom: -60px;
 }
@@ -408,15 +408,17 @@ h6 {
 
 .hed,
 .hed2 {
-	margin-top: 60px;
 	border: 1px solid #000;
 	display: flex;
+	border-top: none;
+}
+.hed1 {
+	margin-top: 60px;
+	border-top: 1px solid #000;
 	height: 60px;
 }
-.hed2{
+.hed2 {
 	height: 20px;
-margin-top: 0;
-border-top:none;
 }
 
 .hed-row {
@@ -433,52 +435,110 @@ border-top:none;
 .hed-dod {
 }
 .dod {
-		width: 60px;
+	width: 60px;
 	border-right: 1px solid #000;
-		display: flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	padding: 5px;
 }
 .hed-cente {
-}
-.centr {
-	flex: 1 1 auto;
-			display: flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+}
+.centr {
+	flex: 1 1 auto;
 	border-right: 1px solid #000;
 }
 .hed-text {
 	display: flex;
 	align-items: center;
-
 }
 .hed-text__1 {
 	border-right: 1px solid #000;
-height: 100%;
-width: 130px;
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
+	height: 100%;
+	width: 130px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 .hed-text__2 {
 	border-right: 1px solid #000;
 	height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-width: 130px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 130px;
 }
 .hed-text__3 {
 	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100px;
+}
+
+.w100 {
+	width: 100%;
+	border: 1px solid #000;
+	text-align: center;
+	border-top: none;
+}
+
+.hed {
+}
+.row {
+}
+.dod {
+}
+.centr-rr {
+	display: flex;
+	flex: 0 0 63%;
+}
+.centr > p {
+	
+}
+.centr-col {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	border-left: 1px solid #000;
+}
+.centr-col .hed-text__1,
+.centr-col .hed-text__2{
 display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-width: 100px;
+justify-content: start;
+}
+.centr-col .hed-text__1{
+	border-bottom: 1px solid #000;
+}
+.hed-text__1 input,
+.hed-text__2 input,
+.hed-text__3 input{
+	width: 100px;
+	height: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.hed-text__col{
+	width: 360px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.col {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.col:nth-child(1){
+	border-bottom: 1px solid #000;
 }
