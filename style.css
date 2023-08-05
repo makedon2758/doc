@@ -34,7 +34,8 @@ body {
 	width: 100%;
 	font-size: 100%;
 	line-height: 1;
-	font-size: 14px;
+	font-weight: 500;
+	font-size: 15px;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -46,16 +47,17 @@ input,
 button,
 textarea {
 	font-family: inherit;
-}
-input {
-	color: blue;
-	font-weight: 600;
-	display: flex;
+	background-color: #ffff0034;
+		display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	
+}
+input {
+	
+
 	padding-bottom: 2px;
-	opacity: 0.5;
 }
 
 input::-ms-clear {
@@ -89,7 +91,7 @@ h4,
 h5,
 h6 {
 	font-size: inherit;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 /* STYLE */
@@ -151,18 +153,20 @@ h6 {
 }
 
 .p02 {
-	display: flex;
+	/* display: flex; */
+	display: grid;
+	grid-template-columns: 80px 60% 11em 11em 9.4em;
 }
 
 .p02 .number {
-	width: 80px;
+	width:  80px;
 }
 .p02-period {
+	padding: 2px;
 	display: flex;
 	align-items: center;
-	margin-right: 20px;
+	margin-right: 1.5%;
 	border: 1px solid #000;
-	width: 60%;
 }
 .p02-input1 {
 	border: 1px solid #000;
@@ -184,14 +188,16 @@ h6 {
 	padding: 2px;
 }
 .p02-input1 input {
-	width: 150px;
+	/* width: 150px; */
+	width: 100%;
 }
 .p02-input2 input {
-	width: 80px;
+	/* width: 80px; */
+	width: 100%;
 }
 .p02-input2 {
 	border: 1px solid #000;
-	margin-left: 20px;
+	margin-left: 9.5%;
 	position: relative;
 }
 .p02-input2::after {
@@ -202,9 +208,10 @@ h6 {
 }
 .p02-input3 {
 	border: 1px solid #000;
-	margin-left: 20px;
+	margin-left: 9.5%;
 	position: relative;
 }
+
 .p02-input3::after {
 	content: "(місяць)";
 	position: absolute;
@@ -222,7 +229,7 @@ h6 {
 }
 
 .p02-input3 input {
-	width: 144px;
+	width: 100%;
 }
 
 .p031 {
@@ -235,11 +242,18 @@ h6 {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	padding: 0.5px;
+	padding: 2px;
+
+}
+
+.p031-input p{
+	border-left:1px solid #000;
+	height: 180%;
+	padding-left: 2px;
 }
 
 .p031-input input {
-	width: 10%;
+	width: 6%;
 	padding: 1px;
 }
 
@@ -269,16 +283,22 @@ h6 {
 	flex-direction: column;
 	position: relative;
 }
-.p04-inputs::after {
+.p04-subtitl{
+	width: 100%;
+	text-align: center;
+}
+/* .p04-inputs::after {
 	content: "(повне найменування (прізвище, ім’я, по батькові (за наявності)) платника податків згідно з реєстраційними документами, дата та номер договору (угоди))";
 	position: absolute;
 	left: 55%;
 	bottom: -15px;
 	width: 100%;
 	transform: translate(-50%, 0);
-}
+} */
 .p04-input1 {
-	height: 70px;
+	height: 30px;
+	/* padding-bottom: 10px; */
+	margin-bottom: 10px;
 	width: 100%;
 }
 .p04-input1 input {
@@ -299,6 +319,7 @@ h6 {
 }
 .p04-column {
 	display: flex;
+	margin-bottom: -15px;
 }
 
 .p041 {
@@ -322,10 +343,7 @@ h6 {
 	height: 90px;
 	display: flex;
 }
-.mb {
-}
-.number {
-}
+
 .p06-adres {
 	flex: 1 1 auto;
 	border: 1px solid #000;
@@ -379,6 +397,7 @@ h6 {
 }
 
 .p-tex {
+	padding: 2px;
 	margin-top: 30px;
 	display: flex;
 	gap: 30px;
@@ -390,8 +409,7 @@ h6 {
 	right: 0;
 	bottom: -60px;
 }
-.mb {
-}
+
 .p-tex__p {
 	width: 200px;
 }
@@ -413,8 +431,11 @@ h6 {
 .hed,
 .hed2 {
 	border: 1px solid #000;
-	display: flex;
+	/* display: flex; */
+	display: grid;
+	grid-template-columns: 4.61em 4.61em auto 10em 10em 7em;
 	border-top: none;
+	overflow: hidden;
 }
 .hed1 {
 	margin-top: 60px;
@@ -428,7 +449,7 @@ h6 {
 .hed-row {
 }
 .row {
-	width: 60px;
+	/* width: 60px; */
 	border-right: 1px solid #000;
 	display: flex;
 	justify-content: center;
@@ -439,7 +460,7 @@ h6 {
 .hed-dod {
 }
 .dod {
-	width: 60px;
+	/* width: 60px; */
 	border-right: 1px solid #000;
 	display: flex;
 	justify-content: center;
@@ -448,23 +469,25 @@ h6 {
 	padding: 5px;
 }
 .hed-cente {
+	padding: 2px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 }
 .centr {
-	flex: 1 1 auto;
+	padding: 2px;
+	/* flex: 1 1 auto; */
 	border-right: 1px solid #000;
 }
 .hed-text {
-	display: flex;
-	align-items: center;
+display: grid;
+grid-template-columns: 10em 10em 7em;
 }
 .hed-text__1 {
 	border-right: 1px solid #000;
 	height: 100%;
-	width: 130px;
+	width: 10em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -477,7 +500,7 @@ h6 {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	width: 130px;
+	/* width: 130px; */
 }
 .hed-text__3 {
 	height: 100%;
@@ -485,7 +508,7 @@ h6 {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	width: 100px;
+	/* width: 100px; */
 }
 
 .w100 {
@@ -497,9 +520,10 @@ h6 {
 
 .centr-rr {
 	display: flex;
-	flex: 0 0 63%;
+	flex: 0 0 65em;
 }
 .centr-rr> p{
+	padding: 2px;
 	display: flex;
 	padding-left: 3px;
 	align-items: center;
@@ -528,14 +552,14 @@ padding-left: 2px;
 .hed-text__1 input,
 .hed-text__2 input,
 .hed-text__3 input{
-	width: 100px;
+	width: 9.1em;
 	height: 20px;
 	padding-left: 10px;
 	padding-right: 10px;
 }
 .hed-text__col{
-	width: 360px;
-
+	width: 26.79em;
+overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -549,6 +573,7 @@ padding-left: 2px;
 .col:nth-child(1){
 	border-bottom: 1px solid #000;
 }
+.on .col:nth-child(1),
 .on .col{
 	border-bottom:none;
 }
@@ -559,4 +584,177 @@ padding-left: 2px;
 
 .br .hed-text__2{
 	border-right:none;
+}
+
+.widd{
+	padding: 2px;
+	width: 74.95em;
+	border-right:1px solid #000;
+}
+
+
+.widd-centr {
+	padding: 2px;
+	display: flex;
+	flex-direction: column;
+	border-right:1px solid #000;
+}
+.column-crntr {
+	border:1px solid #000;
+	border-bottom:none;
+	border-right:none;
+	align-self: flex-end;
+	display: grid;
+	grid-template-columns: 20em 10em;
+	padding-top: 2px;
+	padding-left: 5px;
+}
+.column-centr__text {
+		display: flex;
+	justify-content: center;
+	align-items: center;
+	border-right:1px solid #000;
+	height: 100%;
+}
+.column-centr__input {
+
+}
+
+.cheked {
+	display: grid;
+	grid-template-columns: 6em auto;
+	border:1px solid #000;
+	border-top:none;
+}
+.bt{
+	border-top: 1px solid #000;
+}
+.cheked-chekbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-right:1px solid #000;
+}
+.cheked-text {
+	padding: 2px;
+}
+
+.columns {
+	display: grid;
+	width: 68%;
+	grid-template-columns: 9em 27em 27em;
+	border:1px solid #000;
+}
+
+.bb{
+	border-top:none;
+}
+.in{
+padding-bottom: 3px;
+}
+.columns-one {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-right:1px solid #000;
+	overflow: hidden;
+}
+.columns-two {
+	border-right:1px solid #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.columns-thre {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.columns-two input,
+.columns-thre input{
+	width: 100%;
+}
+
+.col-date {
+	display: flex;
+	justify-content: space-between;
+}
+.col-date-left{
+	width: 68%;
+	display: grid;
+	grid-template-columns: 30em auto;
+	border:1px solid #000;
+}
+.col-date__data {
+	padding-left: 4px;
+	
+	
+}
+.col-date__input {
+		border-left:1px solid #000;
+	
+}
+.col-date__input input{
+	width: 100%;
+}
+.col-date-right {
+}
+.col-date__text {
+}
+
+.kerivnik {
+	display: grid;
+	grid-template-columns: 22em auto;
+	padding-bottom: 20px;
+}
+.kerivnik-text {
+
+}
+.kerivnik-inprt {
+	display: flex;
+	align-self: end;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.kerivnik-inprt p{
+	padding-top: 5px;
+	position: relative;
+}
+.kerivnik-inprt p::after{
+	position: absolute;
+	content:'______________________________________________';
+	top: -15px;
+	left: -50%;
+	width: 100%;
+}
+
+
+.kerivnik-inprt input{
+	width: 70%;
+	height: 30px;
+}
+
+.regrnumber {
+	padding-bottom: 20px;
+	width: 90%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.regrnumber-text {
+}
+.regrnumber-input {
+	border:1px solid #000;
+}
+
+.regrnumber-input input{
+	width: 100%;
+	height: 100%;
+}
+.pb{
+	padding-bottom: 5px;
 }
