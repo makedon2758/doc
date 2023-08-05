@@ -155,7 +155,7 @@ h6 {
 .p02 {
 	/* display: flex; */
 	display: grid;
-	grid-template-columns: 80px 60% 11em 11em 9.4em;
+	grid-template-columns: 80px 60% 11em 7.3em 11em;
 }
 
 .p02 .number {
@@ -588,7 +588,7 @@ overflow: hidden;
 
 .widd{
 	padding: 2px;
-	width: 74.95em;
+	width: 68.7em;
 	border-right:1px solid #000;
 }
 
@@ -642,7 +642,7 @@ overflow: hidden;
 .columns {
 	display: grid;
 	width: 68%;
-	grid-template-columns: 9em 27em 27em;
+	grid-template-columns: 9em 25em 25em;
 	border:1px solid #000;
 }
 
